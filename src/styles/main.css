@@ -6,30 +6,30 @@
 }
 
 :root {
-  --primary-color: #4361ee;  /* Vibrant but not harsh blue */
-  --secondary-color: #3a0ca3; /* Deep royal blue */
-  --text-color: #2b2d42;     /* Soft almost-black */
-  --light-text: #6c757d;      /* Neutral gray */
-  --background: #f8f9fa;      /* Very light gray */
-  --section-bg: #e9ecef;      /* Slightly darker gray */
-  --card-bg: #ffffff;         /* Pure white */
-  --card-shadow: 0 2px 24px rgba(0,0,0,0.08); /* Softer shadow */
-  --footer-bg: #212529;       /* Dark gray */
-  --footer-text: #f8f9fa;     /* Light gray */
+  --primary-color: #008080;      /* Teal */
+  --secondary-color: #006666;    /* Darker teal */
+  --text-color: #1e2b2b;         /* Deep grayish teal */
+  --light-text: #5c6f6f;         /* Muted gray-teal */
+  --background: #f1fdfc;         /* Very light teal-tinted background */
+  --section-bg: #d7f3f2;         /* Light teal gray */
+  --card-bg: #ffffff;            /* White cards for contrast */
+  --card-shadow: 0 2px 24px rgba(0, 128, 128, 0.08); /* Subtle teal shadow */
+  --footer-bg: #004d4d;          /* Dark teal footer */
+  --footer-text: #e0f7f7;        /* Soft light teal for contrast */
   --transition: all 0.3s ease;
 }
 
 body.dark-theme {
-  --primary-color: #4cc9f0;   /* Soft cyan-blue */
-  --secondary-color: #4895ef; /* Lighter blue */
-  --text-color: #edf2f4;      /* Off-white */
-  --light-text: #adb5bd;      /* Medium gray */
-  --background: #121417;      /* Very dark blue-gray */
-  --section-bg: #1a1e24;      /* Slightly lighter than background */
-  --card-bg: #20242b;         /* Dark card background */
-  --card-shadow: 0 2px 24px rgba(0,0,0,0.2); 
-  --footer-bg: #0b0e11;       /* Nearly black */
-  --footer-text: #dee2e6;     /* Light gray */
+  --primary-color: #00b3b3;      /* Lighter cyan-teal */
+  --secondary-color: #00a0a0;    /* Slightly deeper */
+  --text-color: #e6ffff;         /* Off-white teal */
+  --light-text: #88bdbd;         /* Muted medium teal */
+  --background: #0e1e1e;         /* Very dark teal-gray */
+  --section-bg: #162c2c;         /* Slightly lighter background */
+  --card-bg: #1c3333;            /* Dark card surface */
+  --card-shadow: 0 2px 24px rgba(0, 255, 255, 0.12);
+  --footer-bg: #0a1a1a;          /* Almost black teal */
+  --footer-text: #c8f4f4;        /* Light teal text */
 }
 
 html {
