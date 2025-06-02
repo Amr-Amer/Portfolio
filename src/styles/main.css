@@ -6,31 +6,60 @@
 }
 
 :root {
-  --primary-color: #4361ee;  /* Vibrant but not harsh blue */
-  --secondary-color: #3a0ca3; /* Deep royal blue */
-  --text-color: #2b2d42;     /* Soft almost-black */
-  --light-text: #6c757d;      /* Neutral gray */
-  --background: #f8f9fa;      /* Very light gray */
-  --section-bg: #e9ecef;      /* Slightly darker gray */
-  --card-bg: #ffffff;         /* Pure white */
-  --card-shadow: 0 2px 24px rgba(0,0,0,0.08); /* Softer shadow */
-  --footer-bg: #212529;       /* Dark gray */
-  --footer-text: #f8f9fa;     /* Light gray */
+  --primary-color: #008080;       /* Teal - متوسط */
+  --secondary-color: #006666;     /* Teal أغمق قليلاً */
+  --text-color: #264653;          /* أزرق مخضر غامق (قريب للرمادي الداكن) */
+  --light-text: #7f8c8d;          /* رمادي مائل للتركواز */
+  --background: #ffffff;          /* أبيض نقي */
+  --section-bg: #ffffff;          /* اجعل خلفية الأقسام بيضاء */
+  --card-bg: #ffffff;             /* أبيض نقي */
+  --card-shadow: 0 2px 24px rgba(0, 128, 128, 0.1); /* ظل أخضر مائي خفيف */
+  --footer-bg: #004d4d;           /* أخضر مائي غامق جداً */
+  --footer-text: #e0f2f1;         /* أخضر مائي فاتح */
   --transition: all 0.3s ease;
 }
 
-body.dark-theme {
-  --primary-color: #4cc9f0;   /* Soft cyan-blue */
-  --secondary-color: #4895ef; /* Lighter blue */
-  --text-color: #edf2f4;      /* Off-white */
-  --light-text: #adb5bd;      /* Medium gray */
-  --background: #121417;      /* Very dark blue-gray */
-  --section-bg: #1a1e24;      /* Slightly lighter than background */
-  --card-bg: #20242b;         /* Dark card background */
-  --card-shadow: 0 2px 24px rgba(0,0,0,0.2);
-  --footer-bg: #0b0e11;       /* Nearly black */
-  --footer-text: #dee2e6;     /* Light gray */
+/* تضمن الخلفية بيضاء في كامل الصفحة في الوضع العادي */
+html, body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
 }
+
+/* الأقسام الرئيسية تأخذ الخلفية البيضاء */
+section, main, header, footer {
+  background-color: var(--section-bg);
+}
+
+/* الوضع الداكن */
+body.dark-theme {
+  --primary-color: #4db6ac;
+  --secondary-color: #00796b;
+  --text-color: #b2dfdb;
+  --light-text: #80cbc4;
+  --background: #121417;
+  --section-bg: #00695c;
+  --card-bg: #00796b;
+  --card-shadow: 0 2px 24px rgba(0, 77, 64, 0.3);
+  --footer-bg: #00332f;
+  --footer-text: #a7ffeb;
+
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+
+/* في الوضع الداكن أيضاً تأكد الأقسام تتغير خلفيتها */
+body.dark-theme section,
+body.dark-theme main,
+body.dark-theme header,
+body.dark-theme footer {
+  background-color: var(--section-bg);
+}
+
 
 html {
   scroll-behavior: smooth;
