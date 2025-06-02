@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amr Amer | Flutter Developer</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">Amr Amer</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="theme-toggle-li"><button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme (mobile)"><i class="fas fa-moon"></i></button></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggleDesktop" aria-label="Toggle theme (desktop)"><i class="fas fa-moon"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-bg">
+      <div class="hero-content" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem;">
+        <!-- profile image -->
+        <div class="hero-image" style="flex: 1; text-align: center;">
+          <img src="src/assets/profile.jpg" alt="Amr Amer" style="max-width: 250px; width: 100%; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+        </div>
+        <!-- text -->
+        <h1>Hi, I'm <span class="highlight">Amr Amer</span></h1>
+        <p class="subtitle">Flutter Developer | Mobile App Specialist</p>
+        <p>I'm a passionate mobile developer with 3+ years of experience building scalable and user-friendly apps using Flutter. 
+          I specialize in creating elegant mobile experiences backed by solid architecture and modern tools.</p>
+        <div class="cta-buttons" style="margin-top: 1.2rem;">
+          <a href="#projects" class="btn primary">View My Work</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects main-bg">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+
+        <!-- bushraa -->
+        <div class="project-card">
+          <img class="project-image" src="src/assets/bushraa.png" alt="Screenshot">
+          <h3>Bushraa</h3>
+          <p>Trusted dream interpretation app with real-time chat, expert selection, and online payment.</p>
+          <div class="store-btn-row">
+            <a href="https://play.google.com/store/apps/details?id=com.bushraa.user" class="store-btn google" target="_blank">
+              <i class="fab fa-google-play"></i> Google Play (User)
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.bushraa.interpreter" class="store-btn google" target="_blank">
+              <i class="fab fa-google-play"></i> Google Play (Interpreter)
+            </a>
+            <a href="https://apps.apple.com/us/app/بشرى-لتفسير-الأحلام/id6741530113" class="store-btn apple" target="_blank">
+              <i class="fab fa-apple"></i> App Store (User)
+            </a>
+            <a href="https://apps.apple.com/us/app/مفسرين-تطبيق-بشرى/id6741531998" class="store-btn apple" target="_blank">
+              <i class="fab fa-apple"></i> App Store (Interpreter)
+            </a>
+          </div>
+        </div>
+
+         <!-- mew --> 
+         <div class="project-card">
+          <img class="project-image" src="src/assets/mew.png" alt="Screenshot">
+          <h3>Mew</h3>
+          <p>Upcoming app by the Kuwait Ministry of Electricity designed to provide convenient access to 
+            electricity-related services. The app aims to simplify bill payments, service requests, and updates for 
+            residents.  Currently under development, it promises to enhance efficiency and user experience once launched.</p>
+          <div class="store-btn-row">
+            <a href="https://play.google.com/store/apps/details?id=com.mew.mewpay" class="store-btn google" target="_blank">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+            <a href="https://apps.apple.com/eg/app/mew-pay/id1469060309" class="store-btn apple" target="_blank">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Bimokook -->
+        <div class="project-card">
+          <img class="project-image" src="src/assets/bimo_logo.png" alt="Screenshot">
+          <h3>BimoKook</h3>
+          <p>E-commerce app with ERP integration, unit-based pricing, online payments, and push notifications.</p>
+          <div class="store-btn-row">
+            <a href="https://play.google.com/store/apps/details?id=com.bimokook.app" class="store-btn google" target="_blank">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+            <a href="https://apps.apple.com/us/app/bimokook/id6737545207" class="store-btn apple" target="_blank">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+          </div>
+        </div>
+
+        <!-- ratbli --> 
+        <div class="project-card">
+          <img class="project-image" src="src/assets/ratbli.png" alt="Screenshot">
+          <h3>Haykl</h3>
+          <p>Real estate mobile app, akin to OLX, enabling sellers to list properties while providing seamless buying and selling experiences through advanced search and filtering for houses, apartments, villas, and more.</p>
+          <div class="store-btn-row">
+            <a href="https://play.google.com/store/apps/details?id=com.ITSmart.part&pcampaignid=web_share" class="store-btn google" target="_blank">
+              <i class="fab fa-google-play"></i> Google Play (ratbli)
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.ITSmart.part.b2b&pcampaignid=web_share" class="store-btn google" target="_blank">
+              <i class="fab fa-google-play"></i> Google Play (ratbli B2B)
+            </a>
+            <a href="https://apps.apple.com/us/app/ratbli/id1308032045" class="store-btn apple" target="_blank">
+              <i class="fab fa-apple"></i> App Store (ratbli)
+            </a>
+            <a href="https://apps.apple.com/us/app/ratbli-b2b/id6737166330" class="store-btn apple" target="_blank">
+              <i class="fab fa-apple"></i> App Store (ratbli B2B)
+            </a>
+          </div>
+        </div>
+
+        <!-- Azkar --> 
+        <div class="project-card">
+          <img class="project-image" src="src/assets/azkar.png" alt="Screenshot">
+          <h3>Azkar</h3>
+          <p>A mobile app that helps users maintain their daily Azkar by offering a complete collection of morning and evening remembrances, a digital Tasbeeh, Qibla direction, and personalized prayer reminders – all within a simple and intuitive interface.</p>
+          <div class="store-btn-row">
+            <a href="https://play.google.com/store/apps/details?id=com.alkashier.azkar" class="store-btn google" target="_blank">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+            <a href="https://apps.apple.com/us/app/azkar-challenge/id6740204164" class="store-btn apple" target="_blank">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+          </div>
+        </div>
+
+        <!-- country_code -->
+        <div class="project-card">
+          <img class="project-image" src="src/assets/country_code.png" alt="Screenshot">
+          <h3>country-code-fix</h3>
+          <p>A mobile application that updates phone contacts to match the selected country code, making international 
+            communication easier. The app allows users to choose a country code and automatically updates stored 
+            phone numbers accordingly, with a clean and user-friendly interface..</p>
+          <div class="store-btn-row">
+            <a href="https://play.google.com/store/apps/details?id=com.fixcode.ok2code" class="store-btn google" target="_blank">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+            <a href="https://apps.apple.com/us/app/country-code-fix/id6742509026" class="store-btn apple" target="_blank">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+          </div>
+        </div>
+
+      
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section section-bg">
+      <h2>My Skillset</h2>
+      <p class="skills-desc">A comprehensive set of technologies I use to build robust, scalable, and beautiful applications.</p>
+      <div class="skills-cards">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon"><i class="fas fa-mobile-alt"></i></span>
+            <span class="skill-title">Mobile Development</span>
+          </div>
+          <ul>
+            <li>Dart</li>
+            <li>Flutter</li>
+            <li>OOP</li>
+            <li>Clean Architecture</li>
+            <li>Bloc</li>
+            <li>GetX</li>
+            <li>Firebase</li>
+            <li>REST APIs</li>
+            <li>Adaptive & Responsive UI</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon"><i class="fas fa-code"></i></span>
+            <span class="skill-title">Other Skills</span>
+          </div>
+          <ul>
+            <li>Git</li>
+            <li>CI/CD</li>
+            <li>Deployment</li>
+            <li>Dealing With Payment Gateways</li>
+            <li>Push Notifications</li>
+            <li>Dealing With Maps</li>
+            <li>Unit Testing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact main-bg">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-cards">
+          <a href="mailto:amramerdev@gmail.com" class="contact-item card card-link">
+            <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              amramerdev@gmail.com
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/amr-amer1/" class="contact-item card card-link" target="_blank">
+            <div class="icon-circle"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              Amr Amer
+            </div>
+          </a>
+          <a href="https://github.com/Amr-Amer" class="contact-item card card-link" target="_blank">
+            <div class="icon-circle"><i class="fab fa-github"></i></div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              Amr-Amer
+            </div>
+          </a>
+          <a href="https://wa.me/201016638162" class="contact-item card card-link" target="_blank">
+            <div class="icon-circle"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Phone</div>
+              +20 101 719 0886
+            </div>
+          </a>
+        </div>
+        <div class="amazing-together">
+          <h3>Let's Build Something Amazing Together</h3>
+          <div class="amazing-buttons">
+            <a href="https://wa.me/201016638162" class="btn primary" target="_blank">Start a Conversation</a>
+            <a href="src/resume/AMR-AMER-FlowCV-Resume.pdf" class="btn secondary" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Amr Amer. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" style="display:none;"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="src/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+      const icon = themeToggle.querySelector('i');
+      function setTheme(dark) {
+        if (dark) {
+          body.classList.add('dark-theme');
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+        } else {
+          body.classList.remove('dark-theme');
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+        }
+      }
+      const savedTheme = localStorage.getItem('theme');
+      setTheme(savedTheme === 'dark');
+      themeToggle.addEventListener('click', function() {
+        const isDark = !body.classList.contains('dark-theme');
+        setTheme(isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+
+      // Header scroll shadow
+      const header = document.querySelector('.header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 20) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Back to top button
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) {
+          backToTop.style.display = 'block';
+        } else {
+          backToTop.style.display = 'none';
+        }
+      });
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
