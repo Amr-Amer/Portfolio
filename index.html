@@ -24,27 +24,25 @@
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero section-bg">
-      <div class="hero-content" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem;">
-        <!-- profile image -->
-        <div class="hero-image" style="flex: 1; text-align: center;">
-          <img src="src/assets/profile.jpg" alt="Amr Amer" style="max-width: 250px; width: 100%; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <<main>
+    <section id="home" class="hero section-bg" style="padding: 4rem 1rem; text-align: center;">
+      <div class="hero-content">
+        <!-- الصورة داخل إطار دائري -->
+        <div class="profile-image-wrapper" style="display: inline-block; position: relative; padding: 8px; background: white; border-radius: 50%; box-shadow: 0 0 0 5px #2196f3;">
+          <img src="src/assets/profile.jpg" alt="Amr Amer" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%;">
         </div>
-        <!-- text -->
-        <h1>Hi, I'm <span class="highlight">Amr Amer</span></h1>
-        <p class="subtitle">Flutter Developer | Mobile App Specialist</p>
-        <p>I'm a passionate mobile developer with 3+ years of experience building scalable and user-friendly apps using Flutter. 
-          I specialize in creating elegant mobile experiences backed by solid architecture and modern tools.</p>
-        <div class="cta-buttons" style="margin-top: 1.2rem;">
-          <a href="#projects" class="btn primary">View My Work</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
-        </div>
+
+        <!-- النص -->
+        <h1 style="font-size: 2.5rem; font-weight: bold; margin-top: 1.5rem; color: #111;">Mobile App Developer</h1>
+        <p style="max-width: 600px; margin: 1rem auto; font-size: 1.1rem; color: #444;">
+          I'm a passionate Flutter developer building sleek, performant apps and powerful backend solutions with NestJS — used and loved by thousands globally.
+        </p>
       </div>
     </section>
+  </main>
 
 
-    <section id="projects" class="projects main-bg">
+  <section id="projects" class="projects main-bg">
       <h2>My Projects</h2>
       <div class="project-grid">
 
